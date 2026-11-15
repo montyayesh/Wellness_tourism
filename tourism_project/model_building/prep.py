@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
-
+RAW_PATH="tourism_project/data/tourism.csv"
 df = pd.read_csv(RAW_PATH)   # complete the code: path to the registered tourism.csv inside the data folder
 df.drop(columns=["Unnamed: 0", "CustomerID"], inplace=True)   # complete the code: drop the customer identifier column, it is not a predictive feature
 
